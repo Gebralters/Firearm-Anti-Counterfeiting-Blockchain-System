@@ -1,31 +1,15 @@
 package acsse.csc03a3.clients;
 
-
-
-
-import java.io.IOException;
-
-
 public class BuyerClient extends Client{
-	
-	
-		
-		public BuyerClient()
+    
+	private static final long serialVersionUID = 7637929229712022568L;
+
+		public BuyerClient(String nodeaddress)
 		{
-			super();	
+			super( nodeaddress);	
+			
 		}
-        public void login()
-        {
-        	send("HI");
-        	System.out.println(response());
-        	
-        	try {
-				s.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-        }
+      
        
 }
 
