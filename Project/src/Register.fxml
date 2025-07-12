@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="1.0" layoutY="-6.0" prefHeight="533.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="531.0" prefWidth="145.0" style="-fx-background-color: #f66c03;" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="139.0" layoutY="429.0" mnemonicParsing="false" onAction="#registerButtonAction" prefHeight="27.0" prefWidth="124.0" text="Register">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="14.0" layoutY="87.0" text="First Name:" />
+                  <TextField fx:id="fnametext" layoutX="124.0" layoutY="83.0" prefHeight="25.0" prefWidth="247.0" />
+                  <TextField fx:id="lnametext" layoutX="124.0" layoutY="122.0" prefHeight="25.0" prefWidth="247.0" />
+                  <TextField fx:id="snametext" layoutX="124.0" layoutY="158.0" prefHeight="25.0" prefWidth="247.0" />
+                  <TextField fx:id="emtext" layoutX="124.0" layoutY="200.0" prefHeight="25.0" prefWidth="247.0" />
+                  <TextField fx:id="pnumtext" layoutX="124.0" layoutY="239.0" prefHeight="25.0" prefWidth="247.0" />
+                  <TextField fx:id="idnumtext" layoutX="124.0" layoutY="279.0" prefHeight="25.0" prefWidth="247.0" />
+                  <Label layoutX="13.0" layoutY="126.0" text="Last Name:" />
+                  <Label layoutX="14.0" layoutY="162.0" text="Surname:" />
+                  <Label layoutX="12.0" layoutY="204.0" text="Email:" />
+                  <Label layoutX="14.0" layoutY="243.0" text="Phone Number:" />
+                  <Label layoutX="10.0" layoutY="283.0" text="ID Number:" />
+                  <Label layoutX="14.0" layoutY="320.0" text="Confirm Password:" />
+                  <Label layoutX="14.0" layoutY="364.0" text="Password:" />
+                  <Label fx:id="regtext" layoutX="146.0" layoutY="25.0" prefHeight="38.0" prefWidth="109.0" text="Register">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="conpasstext" layoutX="126.0" layoutY="316.0" prefHeight="25.0" prefWidth="247.0" />
+                  <PasswordField fx:id="passtext" layoutX="126.0" layoutY="360.0" prefHeight="25.0" prefWidth="247.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
